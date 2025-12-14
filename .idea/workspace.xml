@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0288dc1c-69fc-425c-9ac6-8e5b13c48c4c" name="Changes" comment="" />
+    <list default="true" id="0288dc1c-69fc-425c-9ac6-8e5b13c48c4c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/experience.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/experience.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/projects.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/projects.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/skills.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/skills.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,6 +38,9 @@
     &quot;accountId&quot;: &quot;65c26573-b3d9-40ff-afb3-89d78d79c19b&quot;
   }
 }</component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 1
@@ -98,6 +107,8 @@
       <workItem from="1765554871349" duration="3068000" />
       <workItem from="1765652321662" duration="8355000" />
       <workItem from="1765693034362" duration="1162000" />
+      <workItem from="1765694368452" duration="5160000" />
+      <workItem from="1765743612748" duration="6457000" />
     </task>
     <servers />
   </component>

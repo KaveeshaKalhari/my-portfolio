@@ -4,27 +4,27 @@ import { Award, Briefcase } from 'lucide-react'
 
 const experiences = [
   {
-    type: "intern",
-    title: "Software Engineer Intern",
-    company: "Tech Company",
-    period: "June 2024 - August 2024",
+    type: "volunteer",
+    title: "Chief Organizer",
+    company: "IEEE WIE Affinity Group",
+    period: "Term 2025-2026",
     description:
       "Developed and maintained full-stack features for the company platform using React and Node.js. Collaborated with cross-functional teams and improved application performance by 30%.",
     highlights: ["Full-stack development", "Performance optimization", "Team collaboration"],
   },
   {
     type: "volunteer",
-    title: "Volunteer Web Developer",
-    company: "Non-Profit Organization",
-    period: "January 2024 - Present",
+    title: "Director of Program and Events Coornitaion Committee",
+    company: "IEEE WIE Affinity Group",
+    period: "Term 2024-2025",
     description: "Built and maintained the organization website, improving user engagement and accessibility.",
     highlights: ["Web development", "UI/UX improvement", "Accessibility standards"],
   },
   {
-    type: "role",
-    title: "IEEE Student Member & Webmaster",
-    company: "IEEE Student Chapter",
-    period: "September 2023 - Present",
+    type: "volunteer",
+    title: "Co-Chair of Futuro 3.0 Project",
+    company: "IEEE WIE Affinity Group",
+    period: "January 2025 - April 2025",
     description:
       "Manage and maintain the chapter website, organize technical events, and coordinate online resources for members.",
     highlights: ["Web management", "Event coordination", "Community engagement"],
@@ -33,19 +33,19 @@ const experiences = [
 
 const achievements = [
   {
-    title: "Hackathon Winner",
-    description: "Won first place in regional hackathon for innovative full-stack application",
+    title: "Completed web design for beginners course",
+    description: "Open Learning Platform, UOM",
     year: "2024",
   },
   {
-    title: "Dean's Honor Roll",
-    description: "Achieved Dean's Honor Roll recognition for academic excellence",
-    year: "2023 - 2024",
+    title: "Completed Front-End Web Development course",
+    description: "Open Learning Platform, UOM",
+    year: "2025",
   },
   {
-    title: "Open Source Contributor",
-    description: "Active contributor to multiple open-source projects",
-    year: "Ongoing",
+    title: "Certificate in Spoken English for Professional Excellence",
+    description: "Aquinas College of Higher Studies, Colombo Branch",
+    year: "2025",
   },
 ]
 
@@ -60,7 +60,7 @@ export default function Experience() {
           <span className="bg-gradient-to-r from-indigo-400 to-blue-400 dark:from-indigo-300 dark:to-blue-300 bg-clip-text text-transparent">
             Experience
           </span>{" "}
-          & Achievements
+          & Certifications
         </h2>
 
         <div className="grid md:grid-cols-2 gap-12">
@@ -104,7 +104,7 @@ export default function Experience() {
           <div>
             <h3 className="text-2xl font-semibold text-foreground mb-8 flex items-center gap-2">
               <Award className="text-accent" size={28} />
-              Achievements
+              Certificates
             </h3>
 
             <div className="space-y-6">

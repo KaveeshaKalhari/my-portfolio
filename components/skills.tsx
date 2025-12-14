@@ -4,27 +4,27 @@ const skillCategories = [
   {
     name: "Frontend",
     icon: "🎨",
-    skills: ["React", "TypeScript", "Tailwind CSS", "Next.js", "Vue.js", "HTML/CSS"],
+    skills: ["React", "TypeScript", "Tailwind CSS v4", "Next.js", "HTML/CSS"],
   },
   {
     name: "Backend",
     icon: "⚙️",
-    skills: ["Node.js", "Express", "Python", "SQL", "REST APIs", "GraphQL"],
+    skills: ["Springboot", "ASP.NET core", "Python", "SQL", "REST APIs", "GraphQL"],
   },
   {
     name: "Databases",
     icon: "💾",
-    skills: ["PostgreSQL", "MongoDB", "Firebase", "Supabase", "Redis", "MySQL"],
+    skills: ["PostgreSQL", "MongoDB", "Firebase", "Supabase", "MySQL"],
   },
   {
     name: "Tools & DevOps",
     icon: "🛠️",
-    skills: ["Git", "Docker", "CI/CD", "Vercel", "AWS", "Linux"],
+    skills: ["Git", "Docker", "Vercel", "AWS", "Linux", "Swagger", "Postman"],
   },
   {
     name: "Other Skills",
     icon: "🚀",
-    skills: ["Problem Solving", "Agile", "UI/UX Design", "Testing", "Web Performance", "API Design"],
+    skills: ["Problem Solving", "Agile", "UI/UX Design", "Testing", "Web Performance"],
   },
 ]
 
