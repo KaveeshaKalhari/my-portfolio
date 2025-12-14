@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0288dc1c-69fc-425c-9ac6-8e5b13c48c4c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/experience.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/experience.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/projects.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/projects.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/skills.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/skills.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="0288dc1c-69fc-425c-9ac6-8e5b13c48c4c" name="Changes" comment="feat: update portfolio content and add relevant images" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -108,12 +102,25 @@
       <workItem from="1765652321662" duration="8355000" />
       <workItem from="1765693034362" duration="1162000" />
       <workItem from="1765694368452" duration="5160000" />
-      <workItem from="1765743612748" duration="6457000" />
+      <workItem from="1765743612748" duration="6773000" />
     </task>
+    <task id="LOCAL-00001" summary="feat: update portfolio content and add relevant images">
+      <option name="closed" value="true" />
+      <created>1765750611981</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1765750611982</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: update portfolio content and add relevant images" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: update portfolio content and add relevant images" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
