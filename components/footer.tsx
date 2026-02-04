@@ -68,7 +68,7 @@ export default function Footer() {
 
         <div className="border-t border-indigo-100 dark:border-indigo-900/30 pt-8">
           <div className="flex flex-col sm:flex-row justify-between items-center text-sm text-foreground/60 gap-4">
-            <p>&copy; {currentYear} Your Name. All rights reserved.</p>
+            <p>&copy; {currentYear} Kaveesha Kalhari. All rights reserved.</p>
             <div className="flex gap-6">
               <a href="#" className="hover:text-primary transition-colors">
                 Privacy
