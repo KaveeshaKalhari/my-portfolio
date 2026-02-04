@@ -59,7 +59,7 @@ export default function Hero() {
                 size="lg"
                 className="border-indigo-300 dark:border-indigo-700/50 text-foreground hover:bg-indigo-50 dark:hover:bg-indigo-900/20 rounded-full px-8 font-semibold flex items-center gap-2 bg-transparent"
             >
-              <a href="/Kaveesha_Kalhari.pdf" download rel="noopener" className="flex items-center gap-2">
+              <a href="/Kaveesha_Kalhari_CV.pdf" download rel="noopener" className="flex items-center gap-2">
                 <Download size={20} /> Download CV
               </a>
             </Button>
