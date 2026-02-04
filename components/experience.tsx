@@ -8,26 +8,24 @@ const experiences = [
     title: "Chief Organizer",
     company: "IEEE WIE Affinity Group",
     period: "Term 2025-2026",
-    description:
-      "Developed and maintained full-stack features for the company platform using React and Node.js. Collaborated with cross-functional teams and improved application performance by 30%.",
-    highlights: ["Full-stack development", "Performance optimization", "Team collaboration"],
+    description: "Actively contributed as an executive committee member by supporting event planning and execution, guiding team members, coordinating with volunteers and stakeholders, and resolving challenges during society activities.",
+    highlights: ["Team Leadership", "Event Execution", "Problem Solving"],
   },
   {
     type: "volunteer",
     title: "Director of Program and Events Coornitaion Committee",
     company: "IEEE WIE Affinity Group",
     period: "Term 2024-2025",
-    description: "Built and maintained the organization website, improving user engagement and accessibility.",
-    highlights: ["Web development", "UI/UX improvement", "Accessibility standards"],
+    description: "Volunteered in a leadership role focusing on organizing programs and coordinating events. Worked closely with committee members to plan activities, manage responsibilities, and ensure smooth execution while maintaining strong collaboration within the society.",
+    highlights: ["Event Planning", "Communication Skills", "Time Management"],
   },
   {
     type: "volunteer",
     title: "Co-Chair of Futuro 3.0 Project",
     company: "IEEE WIE Affinity Group",
     period: "January 2025 - April 2025",
-    description:
-      "Manage and maintain the chapter website, organize technical events, and coordinate online resources for members.",
-    highlights: ["Web management", "Event coordination", "Community engagement"],
+    description: "Volunteered as a Co-Chair for Futuro 3.0, an outreach program conducted for O/L students at Princess of Wales’ College, Moratuwa, aimed at introducing technical knowledge and awareness of technology-related fields.",
+    highlights: ["Team Coordination", "Community Outreach", "Public Speaking", ],
   },
 ]
 
@@ -47,7 +45,7 @@ const achievements = [
     description: "Aquinas College of Higher Studies, Colombo Branch",
     year: "2025",
   },
-]
+  ]
 
 export default function Experience() {
   return (

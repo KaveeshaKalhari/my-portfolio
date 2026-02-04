@@ -48,17 +48,17 @@ export default function Footer() {
             <h4 className="font-semibold text-foreground mb-4">Connect</h4>
             <ul className="space-y-2 text-sm text-foreground/60">
               <li>
-                <a href="mailto:hello@example.com" className="hover:text-primary transition-colors">
+                <a href="mailto:kalharihkkh@gmail.com" className="hover:text-primary transition-colors">
                   Email
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-primary transition-colors">
+                <a href="https://github.com/KaveeshaKalhari" className="hover:text-primary transition-colors">
                   GitHub
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-primary transition-colors">
+                <a href="https://www.linkedin.com/in/kaveesha-kalhari/" className="hover:text-primary transition-colors">
                   LinkedIn
                 </a>
               </li>
