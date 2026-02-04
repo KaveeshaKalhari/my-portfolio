@@ -2,8 +2,56 @@
 
 import { ArrowRight, Download } from "lucide-react"
 import { Button } from "./ui/button"
+import { useEffect, useState } from "react"
 
 export default function Hero() {
+  const roles = [
+    "Full Stack Developer",
+    "UI/UX Enthusiast",
+    "IT Undergraduate",
+    "Future Software Engineer"
+  ]
+
+  const [currentRoleIndex, setCurrentRoleIndex] = useState(0)
+  const [typedText, setTypedText] = useState("")
+  const [isDeleting, setIsDeleting] = useState(false)
+  const [isPaused, setIsPaused] = useState(false)
+
+  useEffect(() => {
+    const currentRole = roles[currentRoleIndex]
+
+    if (isPaused) {
+      const pauseTimeout = setTimeout(() => {
+        setIsPaused(false)
+        setIsDeleting(true)
+      }, 2000) // Pause for 2 seconds before deleting
+      return () => clearTimeout(pauseTimeout)
+    }
+
+    const typingSpeed = isDeleting ? 50 : 100 // Faster when deleting
+
+    const typingTimeout = setTimeout(() => {
+      if (!isDeleting) {
+        // Typing forward
+        if (typedText.length < currentRole.length) {
+          setTypedText(currentRole.slice(0, typedText.length + 1))
+        } else {
+          setIsPaused(true) // Pause when finished typing
+        }
+      } else {
+        // Deleting backward
+        if (typedText.length > 0) {
+          setTypedText(currentRole.slice(0, typedText.length - 1))
+        } else {
+          setIsDeleting(false)
+          setCurrentRoleIndex((prev) => (prev + 1) % roles.length) // Move to next role
+        }
+      }
+    }, typingSpeed)
+
+    return () => clearTimeout(typingTimeout)
+  }, [typedText, isDeleting, isPaused, currentRoleIndex])
+
   return (
       <section className="relative min-h-[600px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-indigo-950/60 via-blue-950/50 to-indigo-950/60 dark:from-slate-950 dark:via-indigo-950/20 dark:to-slate-950"></div>
@@ -16,11 +64,11 @@ export default function Hero() {
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="mb-8 mt-8">
             <div className="mb-8 flex justify-center">
-              <div className="relative w-56 h-56">
+              <div className="relative w-58 h-58">
                 {/* Animated rotating gradient border */}
                 <div className="absolute inset-0 rounded-full bg-gradient-to-r from-indigo-500 via-blue-500 to-indigo-500 animate-border blur-sm "></div>
                 {/* Inner border with pulse effect */}
-                <div className="relative w-full h-full rounded-full bg-gradient-to-br from-indigo-400 to-blue-400 p-1 shadow-xl animate-pulse-glow ">
+                <div className="relative w-full h-full rounded-full bg-gradient-to-br from-indigo-400 to-blue-400 p-1 shadow-xl animaate-pulse-slow">
                   <div className="w-full h-full rounded-full bg-gradient-to-br from-indigo-300 to-blue-300 flex items-center justify-center">
                     <img src="/Kaveesha_Kalhari.png" alt="Kaveesha" className="w-full h-full rounded-full object-cover" />
                   </div>
@@ -28,17 +76,20 @@ export default function Hero() {
               </div>
             </div>
 
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-foreground mb-4 tracking-tight animate-fade-in-up">
+            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-4 tracking-tight animate-fade-in-up">
             <span className="bg-gradient-to-r from-indigo-600 to-blue-500 dark:from-indigo-400 dark:to-blue-300 bg-clip-text text-transparent">
               Kaveesha Kalhari
             </span>
             </h1>
 
-            <p className="text-2xl sm:text-3xl text-foreground/70 mb-8 font-light animate-fade-in-up animation-delay-200">
-              IT Undergraduate & Software Engineering Enthusiast
+            <p className="text-2xl sm:text-3xl mb-4 font-semibold animate-fade-in-up animation-delay-250 min-h-[3rem] flex items-center justify-center" style={{ color: '#00D9FF' }}>
+              <span>
+                {typedText}
+                <span className="animate-pulse ml-1">|</span>
+              </span>
             </p>
 
-            <p className="text-lg text-foreground/60 max-w-2xl mx-auto mb-12 animate-fade-in-up animation-delay-400">
+            <p className="text-lg text-foreground/60 max-w-2xl mx-auto mb-10 animate-fade-in-up animation-delay-400">
               Passionate about full-stack development, problem-solving, and creating elegant solutions. Currently
               exploring opportunities in software engineering.
             </p>
@@ -46,9 +97,9 @@ export default function Hero() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-up animation-delay-600">
             <Button
-              size="lg"
-              asChild
-              className="bg-gradient-to-r from-indigo-500 to-blue-500 hover:from-indigo-600 hover:to-blue-600 text-white px-8 rounded-full font-semibold flex items-center gap-2 transition-all hover:scale-105 hover:shadow-xl"
+                size="lg"
+                asChild
+                className="bg-gradient-to-r from-indigo-500 to-blue-500 hover:from-indigo-600 hover:to-blue-600 text-white px-8 rounded-full font-semibold flex items-center gap-2 transition-all hover:scale-105 hover:shadow-xl"
             >
               <a href="#projects" className="flex items-center gap-2">
                 View Projects <ArrowRight size={20} />
