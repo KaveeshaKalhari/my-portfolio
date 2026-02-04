@@ -9,17 +9,17 @@ const skillCategories = [
   {
     name: "Backend",
     icon: "⚙️",
-    skills: ["Springboot", "ASP.NET core", "Python", "SQL", "REST APIs", "GraphQL"],
+    skills: ["Springboot", "ASP.NET core", "Python", "REST APIs", "GraphQL"],
   },
   {
     name: "Databases",
     icon: "💾",
-    skills: ["PostgreSQL", "MongoDB", "Firebase", "Supabase", "MySQL"],
+    skills: ["PostgreSQL", "MongoDB", "MySQL", "Firebase", "Supabase"],
   },
   {
     name: "Tools & DevOps",
     icon: "🛠️",
-    skills: ["Git", "Docker", "Vercel", "AWS", "Linux", "Swagger", "Postman"],
+    skills: ["Git", "GitHub", "Docker", "Vercel", "AWS", "Linux", "Swagger", "Postman"],
   },
   {
     name: "Other Skills",
